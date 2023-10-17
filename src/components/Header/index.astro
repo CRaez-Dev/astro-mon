@@ -1,0 +1,11 @@
+---
+import Banner from "./components/Banner/index.astro";
+import DarkMode from "./components/DarkMode";
+---
+
+<header
+  class="dark:bg-[#0f172a] bg-[#64748b] h-16 flex px-24 items-center justify-between"
+>
+  <Banner banner="Astromon" />
+  <DarkMode client:only />
+</header>
